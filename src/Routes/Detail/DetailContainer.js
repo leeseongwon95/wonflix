@@ -1,5 +1,4 @@
 import React from "react";
-import reset from "styled-reset";
 import DetailPresenter from "./DetailPresenter";
 
 export default class extends React.Component {
