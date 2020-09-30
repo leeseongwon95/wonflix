@@ -5,11 +5,10 @@ import Section from "Components/Section";
 import Loader from "../../Components/Loader";
 import Message from "../../Components/Message";
 import Poster from "../../Components/Poster";
-
 const Container = styled.div`
   padding: 0px 20px;
 `;
-const HomePresenter = ({ nowPlaying, popular, upComing, loading, error }) =>
+const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) =>
   loading ? (
     <Loader />
   ) : (
@@ -22,22 +21,22 @@ const HomePresenter = ({ nowPlaying, popular, upComing, loading, error }) =>
               id={movie.id}
               imageUrl={movie.poster_path}
               title={movie.original_title}
-              rating={movie.vote_avarage}
+              rating={movie.vote_average}
               year={movie.release_date.substring(0, 4)}
               isMovie={true}
             />
           ))}
         </Section>
       )}
-      {upComing && upComing.length > 0 && (
+      {upcoming && upcoming.length > 0 && (
         <Section title="Upcoming Movies">
-          {upComing.map((movie) => (
+          {upcoming.map((movie) => (
             <Poster
               key={movie.id}
               id={movie.id}
               imageUrl={movie.poster_path}
               title={movie.original_title}
-              rating={movie.vote_avarage}
+              rating={movie.vote_average}
               year={movie.release_date.substring(0, 4)}
               isMovie={true}
             />
@@ -52,7 +51,7 @@ const HomePresenter = ({ nowPlaying, popular, upComing, loading, error }) =>
               id={movie.id}
               imageUrl={movie.poster_path}
               title={movie.original_title}
-              rating={movie.vote_avarage}
+              rating={movie.vote_average}
               year={movie.release_date.substring(0, 4)}
               isMovie={true}
             />
@@ -62,7 +61,6 @@ const HomePresenter = ({ nowPlaying, popular, upComing, loading, error }) =>
       {error && <Message color="#e74c3c" text={error} />}
     </Container>
   );
-
 HomePresenter.propTypes = {
   nowPlaying: PropTypes.array,
   popular: PropTypes.array,
