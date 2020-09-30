@@ -3,26 +3,26 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Section from "Components/Section";
 import Loader from "../../Components/Loader";
+import Message from "../../Components/Message";
 
 const Container = styled.div`
-  padding: 0px 10px;
+  padding: 0px 20px;
 `;
-
-const HomePersenter = ({ nowPlaying, popular, upComing, error, loading }) =>
+const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) =>
   loading ? (
     <Loader />
   ) : (
     <Container>
-      {upComing && upComing.length > 0 && (
-        <Section title="Upcoming Movies">
-          {upComing.map((movie) => (
+      {nowPlaying && nowPlaying.length > 0 && (
+        <Section title="Now Playing">
+          {nowPlaying.map((movie) => (
             <span key={movie.id}>{movie.title}</span>
           ))}
         </Section>
       )}
-      {nowPlaying && nowPlaying.length > 0 && (
-        <Section title="Now Playing">
-          {nowPlaying.map((movie) => (
+      {upcoming && upcoming.length > 0 && (
+        <Section title="Upcoming Movies">
+          {upcoming.map((movie) => (
             <span key={movie.id}>{movie.title}</span>
           ))}
         </Section>
@@ -34,14 +34,15 @@ const HomePersenter = ({ nowPlaying, popular, upComing, error, loading }) =>
           ))}
         </Section>
       )}
+      {error && <Message color="#e74c3c" text={error} />}
     </Container>
   );
-HomePersenter.propTypes = {
+
+HomePresenter.propTypes = {
   nowPlaying: PropTypes.array,
   popular: PropTypes.array,
-  upComing: PropTypes.array,
-  error: PropTypes.string,
+  upcoming: PropTypes.array,
   loading: PropTypes.bool.isRequired,
+  error: PropTypes.string,
 };
-
-export default HomePersenter;
+export default HomePresenter;
