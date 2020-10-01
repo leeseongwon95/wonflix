@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wonflix/precache-manifest.3e2478357bf806bf65b752394508929b.js"
+  "/wonflix/precache-manifest.938d99e819efd63bf40843d5dc66e6b7.js"
 );
 
 self.addEventListener('message', (event) => {

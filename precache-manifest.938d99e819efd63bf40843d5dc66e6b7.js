@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91fb42a889f41445bdeae99ecf380d34",
+    "revision": "56f080f9fff7e395b0a593beb69f5205",
     "url": "/wonflix/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wonflix/static/js/2.baf349df.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f0d66c1a3138b87ca71e",
-    "url": "/wonflix/static/js/main.65463067.chunk.js"
+    "revision": "28b2158673f5774d5177",
+    "url": "/wonflix/static/js/main.6cfcce57.chunk.js"
   },
   {
     "revision": "a7aa8b39bae7f6727dc2",
