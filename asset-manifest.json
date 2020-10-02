@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/wonflix/static/js/main.6cfcce57.chunk.js",
-    "main.js.map": "/wonflix/static/js/main.6cfcce57.chunk.js.map",
+    "main.js": "/wonflix/static/js/main.1ad78d17.chunk.js",
+    "main.js.map": "/wonflix/static/js/main.1ad78d17.chunk.js.map",
     "runtime-main.js": "/wonflix/static/js/runtime-main.c629b1d4.js",
     "runtime-main.js.map": "/wonflix/static/js/runtime-main.c629b1d4.js.map",
-    "static/js/2.baf349df.chunk.js": "/wonflix/static/js/2.baf349df.chunk.js",
-    "static/js/2.baf349df.chunk.js.map": "/wonflix/static/js/2.baf349df.chunk.js.map",
+    "static/js/2.63bbfb0d.chunk.js": "/wonflix/static/js/2.63bbfb0d.chunk.js",
+    "static/js/2.63bbfb0d.chunk.js.map": "/wonflix/static/js/2.63bbfb0d.chunk.js.map",
     "index.html": "/wonflix/index.html",
-    "precache-manifest.938d99e819efd63bf40843d5dc66e6b7.js": "/wonflix/precache-manifest.938d99e819efd63bf40843d5dc66e6b7.js",
+    "precache-manifest.45effa4395a16fd4fd7721f3d93ef8ca.js": "/wonflix/precache-manifest.45effa4395a16fd4fd7721f3d93ef8ca.js",
     "service-worker.js": "/wonflix/service-worker.js",
-    "static/js/2.baf349df.chunk.js.LICENSE.txt": "/wonflix/static/js/2.baf349df.chunk.js.LICENSE.txt"
+    "static/js/2.63bbfb0d.chunk.js.LICENSE.txt": "/wonflix/static/js/2.63bbfb0d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c629b1d4.js",
-    "static/js/2.baf349df.chunk.js",
-    "static/js/main.6cfcce57.chunk.js"
+    "static/js/2.63bbfb0d.chunk.js",
+    "static/js/main.1ad78d17.chunk.js"
   ]
 }
